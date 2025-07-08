@@ -15,7 +15,22 @@ blog](https://tailscale.com/blog/tsnet-virtual-private-services).
 
 ## Build
 
-**TODO**
+First, install dependencies:
+```bash
+go mod download
+```
+
+Then build:
+```bash
+# Build for current platform
+make
+
+# Build for Linux (amd64)
+make tsrprox.linux
+
+# Direct Go build
+go build .
+```
 
 ## Run
 
